@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="checkbox">
+        <input type="checkbox" id="remember_me" />
+        <label for="remember_me">remember me </label>
+      </div>
+
+      <div class="turn_on">
+        <input type="checkbox" id="on_off" />
+        <label for="on_off">Off</label>
+      </div>
+      <div class="radios">
+        <input type="radio" id="one" name="selection" />
+        <label for="one">Radio Selection 1</label>
+        <input type="radio" id="second" name="selection" />
+        <label for="second">Radio Selection 2</label>
+        <input type="radio" id="third" name="selection" />
+        <label for="third">Radio Selection 3</label>
+      </div>
+
+      <select name="dropdown" id="dropdown" required>
+          <option value="" disabled selected hidden>
+    Select an option
+  </option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+
+
+
+
+        <div class="cselect" data-name="dropdown">
+    <button type="button" class="cselect__btn" aria-haspopup="listbox" aria-expanded="false">
+      <span class="cselect__label">Select option…</span>
+      <span class="cselect__chev" aria-hidden="true">▾</span>
+    </button>
+
+    <ul class="cselect__list" role="listbox" tabindex="-1" aria-label="Options">
+      <li class="cselect__opt" role="option" data-value="option1" tabindex="-1">Option 1</li>
+      <li class="cselect__opt" role="option" data-value="option2" tabindex="-1">Option 2</li>
+      <li class="cselect__opt" role="option" data-value="option3" tabindex="-1">Option 3</li>
+    </ul>
+  </div>
+    </form>
+  </body>
+</html>
