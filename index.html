@@ -27,29 +27,58 @@
       </div>
 
       <select name="dropdown" id="dropdown" required>
-          <option value="" disabled selected hidden>
-    Select an option
-  </option>
+        <option value="" disabled selected hidden>Select an option</option>
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
       </select>
 
-<h1>this is about us code</h1>
+      <h1>this is about us code</h1>
+      <h1>this is not fast forward</h1>
 
+      <div class="cselect" data-name="dropdown">
+        <button
+          type="button"
+          class="cselect__btn"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+        >
+          <span class="cselect__label">Select option…</span>
+          <span class="cselect__chev" aria-hidden="true">▾</span>
+        </button>
 
-        <div class="cselect" data-name="dropdown">
-    <button type="button" class="cselect__btn" aria-haspopup="listbox" aria-expanded="false">
-      <span class="cselect__label">Select option…</span>
-      <span class="cselect__chev" aria-hidden="true">▾</span>
-    </button>
-
-    <ul class="cselect__list" role="listbox" tabindex="-1" aria-label="Options">
-      <li class="cselect__opt" role="option" data-value="option1" tabindex="-1">Option 1</li>
-      <li class="cselect__opt" role="option" data-value="option2" tabindex="-1">Option 2</li>
-      <li class="cselect__opt" role="option" data-value="option3" tabindex="-1">Option 3</li>
-    </ul>
-  </div>
+        <ul
+          class="cselect__list"
+          role="listbox"
+          tabindex="-1"
+          aria-label="Options"
+        >
+          <li
+            class="cselect__opt"
+            role="option"
+            data-value="option1"
+            tabindex="-1"
+          >
+            Option 1
+          </li>
+          <li
+            class="cselect__opt"
+            role="option"
+            data-value="option2"
+            tabindex="-1"
+          >
+            Option 2
+          </li>
+          <li
+            class="cselect__opt"
+            role="option"
+            data-value="option3"
+            tabindex="-1"
+          >
+            Option 3
+          </li>
+        </ul>
+      </div>
     </form>
   </body>
 </html>
